@@ -107,4 +107,4 @@ MIT — see [LICENSE](LICENSE).
 
 ## Acknowledgments
 
-This work was conducted as part of an internship at *[institution]*, supervised by *[supervisor name]*. Thanks to Pachade et al. for releasing the RFMiD dataset, the Amsterdam group for both the reference paper and the `hypll` library, and Kaggle for the GPU credits that made the experiments possible.
+This work was conducted as part of an internship at *Barcelona Ceneter for New Medical Technologies*, supervised by *PIELLA FENOY, GEMMA*. Thanks to Pachade et al. for releasing the RFMiD dataset, the Amsterdam group for both the reference paper and the `hypll` library, and Kaggle for the GPU credits that made the experiments possible.
