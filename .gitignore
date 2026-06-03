@@ -1,0 +1,73 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.installed.cfg
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+.pytest_cache/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+.jupyter/
+*-checkpoint.ipynb
+
+# --- Virtual environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+.python-version
+
+# --- Model checkpoints (heavy, regenerable) ---
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+unet_denoiser_best*.pt
+checkpoints/
+
+# --- Dataset (downloaded via Kaggle, never commit) ---
+retinal-disease-classification/
+*.zip
+*.tar
+*.tar.gz
+data/
+
+# --- Training intermediates (regenerable from notebook re-runs) ---
+viz_epoch*.png
+training_curves*.png
+final_qualitative*.png
+noise_levels_preview.png
+
+# Keep the *final* per-phase results .json + curated PNGs under results/
+# (no negation needed — those live in tracked subfolders)
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# --- Kaggle credentials (NEVER commit) ---
+kaggle.json
+.kaggle/
+
+# --- Logs ---
+*.log
+logs/
+runs/
+wandb/
+
+# --- Local docs build ---
+_build/
+site/

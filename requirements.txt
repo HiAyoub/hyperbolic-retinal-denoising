@@ -1,0 +1,26 @@
+# Reproducible environment for the hyperbolic retinal denoising notebooks.
+#
+# The Kaggle base image ships PyTorch, torchvision, numpy, matplotlib, PIL,
+# tqdm — only the items below are explicitly pinned. If you're running
+# locally, install in a fresh Python 3.10+ venv:
+#
+#     pip install -r requirements.txt
+#
+# CUDA build of PyTorch must match your local GPU's compute capability.
+# Kaggle's T4 (sm_75) is supported by all recent PyTorch builds.
+
+# --- Core deep learning ---
+torch>=2.0,<2.6           # 2.6+ changed torch.load default; we set weights_only=False explicitly
+torchvision>=0.15
+torchmetrics==1.4.0       # PSNR + SSIM
+
+# --- Hyperbolic operations (Phases 3 / 3.1 / 4 only) ---
+hypll==0.1.1              # PoincareBall, HConvolution2d, RiemannianAdam, etc.
+
+# --- Image / numerical ---
+numpy>=1.24
+Pillow>=10.0
+matplotlib>=3.7
+
+# --- Progress bars ---
+tqdm>=4.65
